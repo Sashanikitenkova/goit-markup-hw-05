@@ -121,6 +121,7 @@ p {
 
   .item-icon {
     margin-right: 10px;
+    background-color: yellowgreen;
   }
 
 .contact {
@@ -463,14 +464,14 @@ p {
     justify-content: center;
     align-items: center;
   }
+
+  .card-foot {
+    fill: var(--white-color);
+  }
   
   .net-card.foot:hover,
   .net-card.foot:focus {
     background-color: var(--accent-color);
-  }
-  
-  .card-foot {
-    fill: var(--white-color);
   }
 
   .net {
@@ -513,12 +514,6 @@ p {
     color: var(--white-color);
     margin-bottom: 0;
   }
-  
-  
- /* .net-card-link:hover,
-  .net-card-link:focus {
-    fill: var(--white-color);
-  }*/
 
   /* Кнопки выбора в портфолио */
 
@@ -709,10 +704,23 @@ p {
   margin-right: 0;
 }
 
+.partners-card:hover .partners-card-icon,
+.partners-card:focus .partners-card-icon {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
 .partners-card:hover,
 .partners-card:focus {
   border-color: var(--accent-color);
 }
+
+/*.net-card:hover .net-card-link,
+  .net-card:focus .net-card-link {
+    background-color: var(--accent-color);
+    fill: var(--white-color);
+  }*/
+
 
 .partners-card-icon {
   display: flex;
@@ -727,10 +735,10 @@ p {
   align-items: center;
 }
 
-.partners-card-icon:hover,
+/*.partners-card-icon:hover,
 .partners-card-icon:focus {
   fill: var(--accent-color);
-}
+}*/
 
 
 .backdrop {
