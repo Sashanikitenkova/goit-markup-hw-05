@@ -493,11 +493,20 @@ p {
   .net-card:last-child {
     margin-right: 0;
   }
+
+  .net-card-link {
+    fill: #afb1b8;
+  }
   
+  .net-card:hover .net-card-link,
+  .net-card:focus .net-card-link {
+    background-color: var(--accent-color);
+    fill: var(--white-color);
+  }
+
   .net-card:hover,
   .net-card:focus {
     background-color: var(--accent-color);
-    fill: var(--white-color);
   }
   
   .advantages-title.social {
@@ -505,9 +514,6 @@ p {
     margin-bottom: 0;
   }
   
-  .net-card-link {
-    fill: #afb1b8;
-  }
   
  /* .net-card-link:hover,
   .net-card-link:focus {
