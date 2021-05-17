@@ -49,6 +49,9 @@ ul {
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;   
+    padding-bottom: 25px;
+    padding-top: 24px;
+}
 }
 
 p {
@@ -127,6 +130,8 @@ p {
     font-weight: 500;
     Letter-spacing: 0.03em;
     text-decoration: none;
+    padding-bottom: 25px;
+    padding-top: 25px;
 
     transition-property: color, fill;
     transition-duration: 250ms, 250ms;
@@ -362,7 +367,7 @@ p {
 
   .team {
     background-color: var(--button-color);
-    max-width: 1600px;
+    /*max-width: 1600px;*/
 
     margin-left: auto;
     margin-right: auto;
@@ -427,7 +432,7 @@ p {
 
    .basement {
     background-color: var(--background-color);
-    max-width: 1600px;
+   /* max-width: 1600px;*/
 
     padding-bottom: 60px;
     padding-top: 60px;
@@ -720,7 +725,8 @@ p {
   transform: translateY(0);
 }
 
-.portfolio-name:hover .name-portfolio-type {
+.portfolio-name:hover .name-portfolio-type,
+.portfolio-name:focus .name-portfolio-type {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -783,8 +789,8 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.partners-card:hover .partners-card-icon,
-.partners-card:focus .partners-card-icon {
+.partners-card-icon:hover .partners-icon, 
+.partners-card-icon:focus .partners-icon {
  /* border-color: var(--accent-color);*/
   fill: var(--accent-color);
 }
