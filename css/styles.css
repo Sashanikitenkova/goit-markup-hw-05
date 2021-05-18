@@ -211,12 +211,15 @@ p {
       color: var(--white-color);
       margin-top: 0;
       margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      width: 696px;
       font-weight: 900;
       font-size: 44px;
       line-height: 1.36;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      text-align: center;
   }
 
   .hero-button {
@@ -312,7 +315,7 @@ p {
     margin-right: 0;
   }
 
-  .description {
+  .description-advantages {
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -359,6 +362,8 @@ p {
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: var(--white-color);
+    margin-bottom: 0;
+    margin-top: 0;
     left: 83px;
     bottom: 27px;
   }
@@ -420,7 +425,7 @@ p {
   }
 
   .section-profession {
-    margin-bottom: 16px;
+    margin-top: 0px;
   }
 
   .section-card-name {
@@ -677,6 +682,7 @@ p {
     border-width: 0px 1px 1px 1px;
     border-style: solid;
     border-color: var(--border-portfolio);
+    box-shadow:none;
 
     transition-property: box-shadow;
     transition-duration: 250ms;
@@ -720,7 +726,8 @@ p {
   color: var(--white-color);
 }
 
-.portfolio-name:hover .description {
+.portfolio-name:hover .description,
+.portfolio-name:focus .description{
   opacity: 1;
   transform: translateY(0);
 }
@@ -765,7 +772,7 @@ p {
 
   margin-right: 30px; 
 
-  transition-property: border-color;
+  transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -797,7 +804,7 @@ p {
 
 .partners-card:hover,
 .partners-card:focus {
-  border-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .backdrop {
