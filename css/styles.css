@@ -455,6 +455,7 @@ p {
 
     margin-bottom: 9px;
     margin-right: 70px;
+    margin-top: 0;
    }
 
    .social-contact-f .contact-f {
@@ -682,11 +683,6 @@ p {
     border-width: 0px 1px 1px 1px;
     border-style: solid;
     border-color: var(--border-portfolio);
-    box-shadow:none;
-
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .description {
@@ -735,6 +731,10 @@ p {
 .portfolio-name:hover .name-portfolio-type,
 .portfolio-name:focus .name-portfolio-type {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
   .name {
@@ -767,14 +767,8 @@ p {
 .partners-card {
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
 
   margin-right: 30px; 
-
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .partners-card:last-child {
@@ -785,11 +779,19 @@ p {
   display: flex;
   width: 170px;
   height: 92px;
-  border: 0;
-  fill: #afb1b8;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
 
   justify-content: center;
   align-items: center;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.partners-icon {
+  fill: #afb1b8;
 
   transition-property: fill;
   transition-duration: 250ms;
@@ -798,12 +800,11 @@ p {
 
 .partners-card-icon:hover .partners-icon, 
 .partners-card-icon:focus .partners-icon {
- /* border-color: var(--accent-color);*/
   fill: var(--accent-color);
 }
 
-.partners-card:hover,
-.partners-card:focus {
+.partners-card-icon:hover,
+.partners-card-icon:focus {
   border: 1px solid var(--accent-color);
 }
 
